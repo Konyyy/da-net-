@@ -1,16 +1,13 @@
-﻿Console.WriteLine("Введите 1 число ");
+﻿using System;
 
-int x =Convert.ToInt32 (Console.ReadLine());
-
-Console.WriteLine("Введите 2 число ");
-
+Console.WriteLine("Введите число ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите степень чилса ");
 int y = Convert.ToInt32(Console.ReadLine());
-
-for (int i = x; i <= y; i++) 
-
+int result = 1;
+for (int i = 0; i < y; i++)
 {
-
-    Console.WriteLine(i);
-
+    result *= x;
 }
 
+Console.WriteLine("Ваше число = " + result);
